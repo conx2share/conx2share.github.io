@@ -1,3 +1,9 @@
+/* Adjustment for fixed navbar */
+body { padding-top: 67px; }
+@media screen and (max-width: 768px) {
+  body { padding-top: 0px; }
+}
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;

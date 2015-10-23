@@ -1,3 +1,22 @@
-vision: Vision
-mission: Mission
-corporate_statement: Corporate Statement
+vision:
+  heading: Vision
+
+  # This should be limited to around 30 words.
+  content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla lacus, mattis et hendrerit a, aliquet in
+    dui. Sed bibendum purus ac risus viverra efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+    Nam placerat nisl et ipsum.
+
+mission:
+  heading: Mission
+
+  # This content should be limited to about 15 words
+  content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ligula in mi accumsan, et.
+
+corporate_statement:
+  heading: Corporate Statement
+
+  # This content should be limited to about 15 words
+  content: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum ligula in mi accumsan, et.
