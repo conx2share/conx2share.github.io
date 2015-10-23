@@ -8,6 +8,14 @@ body { padding-top: 67px; }
   height: 55px;
 }
 
+#conx2share-front > .row > .col-md-4 > img {
+  width: 80%;
+}
+
+#conx2share-front > .row > .col-md-8 > .row > .col-md-6 > a > img {
+  height: 75px;
+}
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;

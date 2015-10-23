@@ -11,3 +11,4 @@ markdown: kramdown
 
 collections:
   - biographies
+  - conx2share

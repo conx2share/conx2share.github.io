@@ -20,3 +20,15 @@ corporate_statement:
   # This content should be limited to about 15 words
   content: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dui a nunc suscipit ornare.
+
+phone:
+  type: business
+  color: black
+
+store_buttons:
+  apple:
+    alt: Apple
+    url: https://itunes.apple.com/us/app/conx2share/id950825680?ls=1&mt=8
+  google_play:
+    alt: Google play
+    url: https://play.google.com/store/apps/details?id=com.conx2share.conx2share
