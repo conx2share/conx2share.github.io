@@ -10,5 +10,7 @@ url: "" # the base hostname & protocol for your site
 markdown: kramdown
 
 collections:
-  - biographies
-  - conx2share
+  biographies:
+    output: true
+  conx2share:
+    output: false

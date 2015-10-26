@@ -1,4 +1,19 @@
-<article class="col-md-4 text-center">
-  <h3>{{ include.name }}</h3>
-  {{ include.content }}
+<article class="col-md-4 biography">
+  <div class="thumbnail">
+    {% if include.photo != nil %}
+    <a href="{{ include.url }}">
+      <img class="img-responsive" src="{{ include.photo | prepend:'/images/' | prepend: site.baseurl }}" alt="{{ include.name }}" />
+    </a>
+    {% endif %}
+    <div class="caption">
+      <div class="page-header">
+        <h3><a href="{{ include.url }}">{{ include.name }}</a></h3>
+      </div>
+      <div class="page-content">
+        {{ include.content | truncatewords: 35 }}
+      </div>
+      <a class="pull-right" href="{{ include.url }}">more&hellip;</a>
+      <span class="clearfix"></span>
+    </div>
+  </div>
 </article>

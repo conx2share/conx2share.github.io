@@ -1,7 +1,9 @@
+{% assign site_pages = site.pages | sort: 'weight' %}
+
 <div class="navbar-wrapper">
   <div class="container">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -10,12 +12,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          {% assign site_pages = site.pages | sort: 'weight' %}
-          <a class="navbar-brand" href="{{ site_pages[0].url | replace:'index.html','' | prepend: site.baseurl }}"><img src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="{{ site.title }}" /></a>
+
+          <a class="navbar-brand" href="{{ site_pages[0].url | replace:'index.html','' | prepend: site.baseurl }}"><img class="logo" src="{{ '/images/logo.png' | prepend: site.baseurl }}" alt="{{ site.title }}" /></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-          {% assign site_pages = site.pages | sort: 'weight' %}
           {% for site_page in site_pages %}
             <li{% if site_page.url == page.url %} class="active"{% endif %}><a href="{{ site_page.url | replace:'index.html','' | prepend: site.baseurl }}">{{ site_page.title }}</a></li>
           {% endfor %}

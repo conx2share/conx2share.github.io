@@ -4,21 +4,16 @@ body { padding-top: 67px; }
   body { padding-top: 0px; }
 }
 
-.navbar-brand > img {
-  height: 55px;
-}
-
-#conx2share-front > .row > .col-md-4 > img {
-  width: 80%;
-}
-
-#conx2share-front > .row > .col-md-8 > .row > .col-md-6 > a > img {
-  height: 75px;
+.navbar-brand > .logo {
+  max-height: 100%;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -36,4 +31,8 @@ body { padding-top: 67px; }
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+
+.biography > .thumbnail > a > .img-responsive {
+  max-height: 232px;
 }
