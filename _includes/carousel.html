@@ -11,7 +11,7 @@
     {% for i in (1..site.data.front['slides']) %}
       {% assign slide = i | minus:1 %}
       <div class="item active">
-        <img class="slide" src="{{ '/images/slide-' | append:slide | append:'.jpg' | prepend:site.baseurl }}" alt="slide {{ slide }}">
+        <img class="slide img-responsive" src="{{ '/images/slide-' | append:slide | append:'.jpg' | prepend:site.baseurl }}" alt="slide {{ slide }}">
         <!--<div class="container">-->
           <!--<div class="carousel-caption">-->
             <!--<h1>Image #1</h1>-->
