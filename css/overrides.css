@@ -44,7 +44,7 @@ body {
   max-height: 232px;
 }
 
-.media-heading > .row > .col-md-6 > a > .img-responsive {
+.media-body > .row > .col-md-6 > a > .img-responsive {
   max-height: 70px;
   margin-top: 75px;
   margin-bottom: 75px;

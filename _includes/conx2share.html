@@ -2,8 +2,8 @@
 
   {% assign conx2share = site.conx2share | sort:'index' | first %}
 
-  <div class="page-header text-center">
-    <h2><a href="http://conx2share.com/">{{ conx2share.heading }}</a></h2>
+  <div class="page-header">
+    <h2><a href="http://conx2share.com/"><img class="img-responsive center-block" src="{{ '/images/logo-conx2share.png' | prepend:site.baseurl }}" alt="{{ conx2share.heading }}" /></a></h2>
   </div>
 
   <div class="media row">
@@ -15,21 +15,22 @@
     </div>
 
     <div class="container col-md-7">
-      <div class="media-body">
-        <div class="media-heading">
-          <div class="row">
-            {% for store_button in site.data.front['store_buttons'] %}
-            <div class="col-md-6">
-              <a href="{{ store_button[1]['url'] }}">
-                <img class="img-responsive center-block" src="{{ store_button[0] | prepend:'/images/' | append:'_store_button.png' | prepend:site.baseurl }}" alt="{{ store_button[1]['alt'] }} store button" /></a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
+      <div class="media-heading">
         <div class="page-content">
           {{ conx2share.content }}
         </div>
       </div>
+      <div class="media-body">
+        <div class="row">
+          {% for store_button in site.data.front['store_buttons'] %}
+          <div class="col-md-6">
+            <a href="{{ store_button[1]['url'] }}">
+              <img class="img-responsive center-block" src="{{ store_button[0] | prepend:'/images/' | append:'_store_button.png' | prepend:site.baseurl }}" alt="{{ store_button[1]['alt'] }} store button" /></a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
     </div>
 
   </div>
