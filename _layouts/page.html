@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container">
   <div class="page-header">
-    <h1>{% if page.name == nil %}{{ page.title }}{% else %}{{ page.name }}{% endif %}</h1>
+    <h1>{% if page.title == nil %}{{ page.name }}{% else %}{{ page.title }}{% endif %}</h1>
   </div>
   {{ content }}
 </div>
