@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: bio
 name: Craig A. Smith
 photo: craig-smith.jpg
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: bio
 name: Pastor Ken Wilde
 photo: ken-wilde.jpg
 ---

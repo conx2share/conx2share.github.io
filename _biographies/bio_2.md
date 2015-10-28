@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: bio
 name: Rev. Dr. Cornell L. Haan
 photo: cornell-haan.jpg
 ---
