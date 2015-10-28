@@ -10,11 +10,11 @@
 
     {% assign file = '/images/' | append:site.data.front['phone'].type | append:'-' | append:site.data.front['phone'].color | append:'.png' %}
 
-    <div class="media-left col-md-4">
+    <div class="media-left col-sm-4">
       <a href="http://conx2share.com/"><img class="media-object img-responsive" src="{{ file | prepend:side.baseurl }}" alt="conx2share logo" /></a>
     </div>
 
-    <div class="container col-md-7">
+    <div class="container col-sm-7">
       <div class="media-heading">
         <div class="page-content">
           {{ conx2share.content }}
@@ -23,7 +23,7 @@
       <div class="media-body">
         <div class="row">
           {% for store_button in site.data.front['store_buttons'] %}
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <a href="{{ store_button[1]['url'] }}">
               <img class="img-responsive center-block" src="{{ store_button[0] | prepend:'/images/' | append:'_store_button.png' | prepend:site.baseurl }}" alt="{{ store_button[1]['alt'] }} store button" /></a>
           </div>

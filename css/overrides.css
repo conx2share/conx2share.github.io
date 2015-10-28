@@ -45,6 +45,18 @@ body {
   max-height: 232px;
 }
 
+@media screen and (max-width: 1200px) {
+  .biography > .thumbnail > a > .img-responsive {
+    max-height: 189px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .biography > .thumbnail > a > .img-responsive {
+    max-height: 140px;
+  }
+}
+
 .media-body > .row > .col-md-6 > a > .img-responsive {
   max-height: 70px;
   margin-top: 75px;
