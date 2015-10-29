@@ -41,21 +41,36 @@ body {
   background-color: #777;
 }
 
-.biography > .thumbnail > a > .img-responsive {
-  max-height: 232px;
+@media screen and (min-width: 768px) {
+  .biography > .thumbnail {
+    min-height: 509px;
+  }
+
+  .biography > .thumbnail > a > .img-responsive {
+    max-height: 140px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
+  .biography > .thumbnail {
+    min-height: 497px;
+  }
+
   .biography > .thumbnail > a > .img-responsive {
     max-height: 189px;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .biography > .thumbnail {
+    min-height: 496px;
+  }
+
   .biography > .thumbnail > a > .img-responsive {
-    max-height: 140px;
+    max-height: 232px;
   }
 }
+
 
 .media-body > .row > .col-md-6 > a > .img-responsive {
   max-height: 70px;
