@@ -3,14 +3,14 @@
     <ol class="carousel-indicators">
       {% for i in (1..site.data.front['slides']) %}
         {% assign slide = i | minus:1 %}
-        <li data-target="#header-carousel" data-slide-to="{{ slide }}"{% if slide == 0 %} class="active"{% endif %}></li>
+        <li data-target="#header-carousel" data-slide-to="{{ slide }}"{% if forloop.first %} class="active"{% endif %}></li>
       {% endfor %}
     </ol>
   {% endif %}
   <div class="carousel-inner" role="listbox">
     {% for i in (1..site.data.front['slides']) %}
       {% assign slide = i | minus:1 %}
-      <div class="item active">
+      <div class="item{% if forloop.first %} active {% endif %}">
         <img class="slide img-responsive" src="{{ '/images/slide-' | append:slide | append:'.jpg' | prepend:site.baseurl }}" alt="slide {{ slide }}">
         <!--<div class="container">-->
           <!--<div class="carousel-caption">-->
